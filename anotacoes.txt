@@ -1,0 +1,16 @@
+==== VRAPTOR 3 =====
+Framework MVC agil criado pela Caelum
+
+Controller do Vreptor: precisam da anotação
+@Resource
+
+Dentro do controler, os metodos precisam ser marcados com seus URIs:
+Ex: @Path("/ajuda")
+
+Ao importar um projeto Eclipse, sempre marcar a opção de 'copiar para o workspace'
+import -> existing project into workspace.
+
+O VRaptor é um FrontController. Ele recebe todas as requisições
+e delega-as para os controladores exatos (por exemplo ProdutoController, IndexController, etc)
+/* - IndexController
+/produto/* - ProdutoController

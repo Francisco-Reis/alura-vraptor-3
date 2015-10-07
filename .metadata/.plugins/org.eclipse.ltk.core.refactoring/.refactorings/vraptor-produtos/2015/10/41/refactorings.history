@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;vraptor-produtos/WebContent/WEB-INF/jsp/index/NewFile.jsp&apos; to &apos;ajuda.jsp&apos;" description="Rename resource &apos;NewFile.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/jsp/index/NewFile.jsp" name="ajuda.jsp" stamp="1444226097659" updateReferences="true"/>
+</session>
