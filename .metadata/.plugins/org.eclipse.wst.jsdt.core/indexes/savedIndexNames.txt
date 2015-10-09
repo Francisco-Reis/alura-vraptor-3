@@ -5,5 +5,4 @@ INDEX VERSION 1.3+D:\Estudos\alura\alura-vraptor-3\.metadata\.plugins\org.eclips
 884706534.index
 522034787.index
 3421703520.index
-356620574.index
 1607433600.index
