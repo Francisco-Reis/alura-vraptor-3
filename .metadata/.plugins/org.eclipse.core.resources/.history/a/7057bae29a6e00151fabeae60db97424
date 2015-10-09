@@ -1,0 +1,70 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="/produto/adiciona" method="post">
+<label>Nome <input type="text" value="produto.nome"></label>package br.com.caelum.online.loja.controlador;
+
+import java.util.List;
+
+import br.com.caelum.online.loja.dao.ProdutoDao;
+import br.com.caelum.online.loja.dominio.Produto;
+import br.com.caelum.vraptor.Path;
+import br.com.caelum.vraptor.Resource;
+
+@Resource
+public class ProdutoController {
+
+	private final ProdutoDao produtos;
+	
+	public ProdutoController() {
+		this.produtos = new ProdutoDao();
+	}
+
+	public List<Produto> lista() {
+		return this.produtos.pegaTodos();
+	}
+	
+	@Path("/produto/{id}")
+	public Produto exibe(Long id){
+		return this.produtos.pegaPorId(id);
+	}
+}
+package br.com.caelum.online.loja.controlador;
+
+import java.util.List;
+
+import br.com.caelum.online.loja.dao.ProdutoDao;
+import br.com.caelum.online.loja.dominio.Produto;
+import br.com.caelum.vraptor.Path;
+import br.com.caelum.vraptor.Resource;
+
+@Resource
+public class ProdutoController {
+
+	private final ProdutoDao produtos;
+	
+	public ProdutoController() {
+		this.produtos = new ProdutoDao();
+	}
+
+	public List<Produto> lista() {
+		return this.produtos.pegaTodos();
+	}
+	
+	@Path("/produto/{id}")
+	public Produto exibe(Long id){
+		return this.produtos.pegaPorId(id);
+	}
+}
+
+</form>
+
+</body>
+</html>
